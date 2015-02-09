@@ -67,15 +67,14 @@
 <h3>
 <a id="feb-17-1000-amnoon--dcl-l440" class="anchor" href="#feb-17-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feb. 17, 10:00 am–noon • DCL L440</h3>
 
-<p>This is intended to give you a whirlwind tour of the issues underlying scientific computing, particularly as that is executed today on distributed clusters.  What you should walk out of here with is at least a list of topics to dig deeper into, because semester-long courses could be written with the outline I am using to introduce scientific computing.</p>
+<p>This is intended to give you a whirlwind tour of the issues underlying scientific computing, particularly as that is practiced on modern distributed clusters.  What you should walk out of here with is exposure to the high-level concepts of scientific computing as a software engineering activity.  At the least you will have a list of topics to dig deeper into, because semester-long courses have been written to introduce scientific computing.</p>
 
 <ul>
 <li>Scientific computing</li>
-<li>Architecture</li>
-<li>Performance</li>
+<li>Strategies (architecture, parallelization, scaling)</li>
 <li>Running code (shells, job queues, scripts)</li>
-<li>Programming, building, and debugging scientific codes</li>
-<li>Numerical error</li>
+<li>Compiling code (makefiles, linking)</li>
+<li>Building and debugging scientific codes (numerical error, valgrind)</li>
 </ul>
 
 <h1>
@@ -85,10 +84,10 @@
 <h3>
 <a id="feb-24-1000-amnoon--dcl-l440" class="anchor" href="#feb-24-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feb. 24, 10:00 am–noon • DCL L440</h3>
 
-<p>While the prior workshop focuses on scientific cluster computing writ large, this workshop will focus more on the workflow, libraries, and environment of the <a href="http://campuscluster.illinois.edu/">Illinois Campus Cluster Program</a>.</p>
+<p>While the prior workshop focuses on scientific cluster computing writ large, this workshop will focus more on the workflow, libraries, and environment of the <a href="http://campuscluster.illinois.edu/">Illinois Campus Cluster Program</a>.  Representatives of Campus Cluster will be present as well to answer user questions.</p>
 
 <ul>
-<li>Background, design of CC</li>
+<li>Background, design of Campus Cluster</li>
 <li>Access</li>
 <li>Filesystem</li>
 <li>Running code (Torque/PBS queueing)</li>
@@ -106,12 +105,16 @@
 <h3>
 <a id="mar-3-1000-amnoon--dcl-l440" class="anchor" href="#mar-3-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mar. 3, 10:00 am–noon • DCL L440</h3>
 
+<p><a href="http://openmp.org/wp/">OpenMP</a> is a set of extensions to the C, C++, and Fortran languages to allow the effective control of multiple cores on shared-memory machines, such as desktop computers or single nodes of supercomputers.  With a few well-placed annotations and some judicious restructuring of your current code, you can start seeing speedups from effectively using multiple processes immediately.  We will discuss the basics of OpenMP and examine some applications as well.  Programming experience with C or C++ is assumed.</p>
+
 <h1>
 <a id="distributed-parallel-programming-for-engineers-mpi" class="anchor" href="#distributed-parallel-programming-for-engineers-mpi" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#mpi">Distributed Parallel Programming for Engineers (MPI)</a>
 </h1>
 
 <h3>
 <a id="mar-10-1000-amnoon--dcl-l440" class="anchor" href="#mar-10-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mar. 10, 10:00 am–noon • DCL L440</h3>
+
+<p>The <a href="http://www.mcs.anl.gov/research/projects/mpi/">Message-Passing Interface</a> is the <em>de facto</em> standard for all large-scale distributed-memory cluster computing.  We will examine the basics of this standard in C (and can touch on C++ and Fortran), as well as discuss some numerical coding applications and considerations.  Programming experience with C or C++ is assumed.</p>
 
 <h1>
 <a id="about-these-workshops" class="anchor" href="#about-these-workshops" aria-hidden="true"><span class="octicon octicon-link"></span></a>About These Workshops</h1>
