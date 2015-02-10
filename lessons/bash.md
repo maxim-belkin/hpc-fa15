@@ -2,13 +2,6 @@
 
 ![](./img/dilbert-1486.strip.gif)
 
-## Motivation
-
-If you're like me, this is what you knew about Unix before you started
-graduate school.  This also demonstrates the dangers of relying on a
-graphical user interface for all of your needs.
-[Jurassic Park clip](http://www.youtube.com/watch?v=J1VE6C0H2bU)
-
 -   Who has used the command line at all before?  Does anyone remember DOS?
 -   Who currently uses an application which requires the command line?
 -   Who has used Linux before?
@@ -22,7 +15,7 @@ graphical user interface for all of your needs.
 -   The shell's main disadvantages are its primarily textual nature and how cryptic its commands and operation can be.
 
 -   `echo`
-    -   `echo $SHELL`
+-   `echo $SHELL`
 -   `whoami`
 -   `who`
 -   `man`
@@ -171,7 +164,7 @@ navigation and command-line work:
     analyzed/  fructose.dat    raw/   sucrose.dat
 </code>
     
-    What command(s) could you run so that the commands below will produce the output shown?
+What command(s) (such as `rm`, `mv`) could you run so that the commands below will produce the output shown?
 
 <code>
     $ ls
@@ -191,7 +184,7 @@ navigation and command-line work:
     $ cp thesis/citations.txt thesis/quotations.txt backup
 </code>
     
-    What does `cp` do when given three or more filenames, as in:
+What does `cp` do when given three or more filenames, as in:
     
 <code>
     $ ls -F
@@ -201,7 +194,7 @@ navigation and command-line work:
     $ cp intro.txt methods.txt survey.txt
 </code>
     
-    Why do you think `cp`'s behavior is different from `mv`'s?
+Why do you think `cp`'s behavior is different from `mv`'s?
 
 -   The command `ls -R` lists the contents of directories recursively,
     _i.e._, lists their sub-directories, sub-sub-directories, and so on
@@ -225,10 +218,15 @@ navigation and command-line work:
 
 ### Advanced
 -   `2>`, `<<`
-    -   `tr a-z A-Z << END_TEXT`
-    -   `one two three`
-    -   `um dois três`
-    -   `END_TEXT`
+
+-   `tr a-z A-Z << END_TEXT`
+
+-   `one two three`
+
+-   `um dois três`
+
+-   `END_TEXT`
+
 -   `>>`
 
 ### Exercises
@@ -257,50 +255,48 @@ navigation and command-line work:
     has this effect.
 
 -   What is the difference between
-    `$ wc -l < mydata.dat`
+
+        $ wc -l < mydata.dat
+
     and
-    `$ wc -l mydata.dat`
+
+        $ wc -l mydata.dat
 
 -   The command `uniq` removes adjacent duplicated lines from its input.
     For example, run the following commands:
     
-<code>
-    $ cat salmon.txt
+        $ cat salmon.txt
+        
+        $ uniq salmon.txt
     
-    $ uniq salmon.txt
-</code>
-
     Why do you think `uniq` only removes adjacent duplicated lines? (Hint: think about very large data sets.) Which other command could you combine with it in a pipe to remove all duplicated lines?
 
 -   Examine the file called `animals.txt` using less.  What text passes through
     each of the pipes and the final redirect in the pipeline below?
-<code>
-    cat animals.txt | head -5 | tail -3 | sort -r > final.txt
-</code>
+
+        cat animals.txt | head -5 | tail -3 | sort -r > final.txt
 
 -   The command:
     
-    `$ cut -d , -f 2 animals.txt`
+        $ cut -d , -f 2 animals.txt
     
     produces the following output:
+
+        deer
     
-<code>
-    deer
+        rabbit
     
-    rabbit
+        raccoon
     
-    raccoon
+        rabbit
     
-    rabbit
+        deer
     
-    deer
+        fox
     
-    fox
+        rabbit
     
-    rabbit
-    
-    bear
-</code>
+        bear
     
     What other command(s) could be added to this in a pipeline to find out what
     animals the file contains (without any duplicates in their names)?
@@ -325,15 +321,13 @@ navigation and command-line work:
 -   `for`, `do`, `done`
 -   `if`, `then`, `fi` [ref](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html)
     
-<code>
-    for i in {a..z}  # only way to do non-numeric lists
+        for i in {a..z}  # only way to do non-numeric lists
 
-    do               # try also with {A..z} to show trouble
+        do               # try also with {A..z} to show trouble
 
-        echo $i
+            echo $i
 
-    done
-</code>
+        done
 
 -   Ctrl + C
 
@@ -346,35 +340,22 @@ navigation and command-line work:
 ### Exercises
 -   Suppose that `ls` initially displays:
     
-<code>
-    fructose.dat    glucose.dat   sucrose.dat
-</code>
+        fructose.dat    glucose.dat   sucrose.dat
     
     What is the output of:
     
-<code>
-    for datafile in *.dat
-    
-    do
-    
-        ls *.dat
-    
-    done
-</code>
+        for datafile in *.dat
+        do
+            ls *.dat
+        done
 
 -   In the same directory, what is the effect of this loop?
     
-<code>
-    for sugar in *.dat
-    
-    do
-    
-        echo $sugar
-        
-        cat $sugar > xylose.dat
-        
-    done
-</code>
+        for sugar in *.dat
+        do
+            echo $sugar        
+            cat $sugar > xylose.dat        
+        done
     
     1. Prints fructose.dat, glucose.dat, and sucrose.dat, and copies sucrose.dat to create xylose.dat.
     2. Prints fructose.dat, glucose.dat, and sucrose.dat, and concatenates all three files to create xylose.dat.
@@ -383,36 +364,25 @@ navigation and command-line work:
 
 -   `expr` does very simple arithmetic using command-line parameters:
     
-<code>
-    $ expr 3 + 5
+        $ expr 3 + 5
     
-    8
+        8
     
-    $ expr 30 / 5 - 2
+        $ expr 30 / 5 - 2
     
-    4
-</code>
+        4
     
     Given this, what is the output of:
     
-<code>
-    for left in 2 3
-    
-    do
-    
-        for right in $left
-        
+        for left in 2 3
         do
-        
-            expr $left + $right
-            
+            for right in $left
+            do
+                expr $left + $right
+            done
         done
-        
-    done
-</code>
 
--   What is the problem with multiplication with `expr`?  Can you _escape_ the `*`
-    so that it works as expected?
+-   What is the problem with multiplication with `expr`?  Can you _escape_ the `*` so that it works as expected?
 
 
 ## Shell Scripts
@@ -440,22 +410,20 @@ navigation and command-line work:
 
 -   Now let's turn that into an arbitrary slicer:
     
-<code>
-    head $2 $1 | tail $3
+        head $2 $1 | tail $3
     
-    # Select lines from the middle of a file.
+        # Select lines from the middle of a file.
     
-    # Usage: middle.sh filename -end_line -num_lines
+        # Usage: middle.sh filename -end_line -num_lines
     
-    head $2 $1 | tail $3
+        head $2 $1 | tail $3
     
     
-    # Select lines from the middle of a file.
+        # Select lines from the middle of a file.
     
-    # Usage: middle.sh filename -first_line -last_line
+        # Usage: middle.sh filename -first_line -last_line
     
-    head -$3 $1 | tail -$(expr $3 - $2 + 1)
-</code>
+        head -$3 $1 | tail -$(expr $3 - $2 + 1)
 
 ### Advanced
 -   `.bash_profile`
@@ -467,23 +435,21 @@ navigation and command-line work:
 ### Exercises
 -   Leah has several hundred data files, each of which is formatted like this:
     
-<code>
-    2013-11-05,deer,5
+        2013-11-05,deer,5
     
-    2013-11-05,rabbit,22
+        2013-11-05,rabbit,22
     
-    2013-11-05,raccoon,7
+        2013-11-05,raccoon,7
     
-    2013-11-06,rabbit,19
+        2013-11-06,rabbit,19
     
-    2013-11-06,deer,2
+        2013-11-06,deer,2
     
-    2013-11-06,fox,1
+        2013-11-06,fox,1
     
-    2013-11-07,rabbit,18
+        2013-11-07,rabbit,18
     
-    2013-11-07,bear,1
-</code>
+        2013-11-07,bear,1
     
     Write a shell script called `species.sh` that takes any number of
     filenames as command-line parameters, and uses `cut`, `sort`, and `uniq`
@@ -508,19 +474,17 @@ navigation and command-line work:
     and `sucrose.dat`. Explain what the following script, `example.sh`, would
     do when run as `bash example.sh *.dat`:
     
-<code>
-	echo *.*
-	
-	for filename in $1 $2 $3
-	
-	do
-	
-	    cat $filename
-	    
-	done
-	
-	echo $*.dat
-</code>
+        echo *.*
+    
+        for filename in $1 $2 $3
+    
+        do
+    
+            cat $filename
+        
+        done
+    
+        echo $*.dat
 
 -   The `history` shows the last thousand or so commands that you've used.  What does this
     code do?  (Test `awk '{print $1}' data/pdb/methane.pdb` to see what this `awk` does.)
