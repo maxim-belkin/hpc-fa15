@@ -78,6 +78,9 @@ We will use example codes obtained as follows to illustrate compiling, queueing,
         -   Python:  2.7.8, 3.4.1 are both available, plus legacy versions
         -   The latest versions are always preferred for compiling new 
             programs.
+        -   Libraries are also available; for instance, the Intel MKL.  You
+            can see what is required to compile with it on a specific system
+            using the [command-line flag tool](https://software.intel.com/en-us/articles/intel-mkl-link-line-advisor/).
 -   Installing
     -   As you do not have administrator privileges on Campus Cluster, you
         won't be able to `make install` your software.  You have two 
