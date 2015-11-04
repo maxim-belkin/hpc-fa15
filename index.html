@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>HPC-Sp15 by uiuc-cse</title>
+    <title>High-Performance Computing (Fall 2015) by maxim-belkin</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
@@ -17,19 +17,19 @@
   <body>
 
       <header>
-        <h1>HPC-Sp15</h1>
+        <h1>High-Performance Computing (Fall 2015)</h1>
         <p>CSE Training Workshops in HPC Tools</p>
       </header>
 
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/uiuc-cse/hpc-sp15" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/maxim-belkin/hpc-fa15" class="button fork"><strong>View On GitHub</strong></a>
         <div class="downloads">
           <span>Downloads:</span>
           <ul>
-            <li><a href="https://github.com/uiuc-cse/hpc-sp15/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/uiuc-cse/hpc-sp15/tarball/master" class="button">TAR</a></li>
+            <li><a href="https://github.com/maxim-belkin/hpc-fa15/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/maxim-belkin/hpc-fa15/tarball/master" class="button">TAR</a></li>
           </ul>
         </div>
       </div><!-- end banner -->
@@ -39,18 +39,17 @@
         <ul></ul>
       </nav>
       <section>
-        <p>All workshops will be held in the EWS computer laboratory, L440 Digital Computer Laboratory.  There is no sign-up for this series—walk-ins are welcome and encouraged!</p>
+        <p>This workshop series is held in the <a href="https://www.google.com/maps/place/Thomas+M.+Siebel+Center+for+Computer+Science,+201+N+Goodwin+Ave,+Urbana,+IL+61801">Siebel Computer Lab, Room 0218</a>. <br>
+Walk-ins are welcome and encouraged!</p>
 
-<p>L440 DCL is a little tricky to find if you haven't been there before.  It's located in the basement, and can be accessed by going down the main staircase in DCL and turning right.</p>
-
-<p><img src="./img/map-l440.png" alt=""></p>
+<hr>
 
 <h1>
 <a id="introduction-to-the-linux-command-line-bash-shell" class="anchor" href="#introduction-to-the-linux-command-line-bash-shell" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#bash">Introduction to The Linux Command Line (Bash Shell)</a>
 </h1>
 
 <h3>
-<a id="feb-10-1000-amnoon--dcl-l440" class="anchor" href="#feb-10-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feb. 10, 10:00 am–noon • DCL L440</h3>
+<a id="oct-14-1000-am--noon--scl-0218" class="anchor" href="#oct-14-1000-am--noon--scl-0218" aria-hidden="true"><span class="octicon octicon-link"></span></a>Oct. 14, 10:00 am – noon • SCL 0218</h3>
 
 <p>When you open up a command line or need to execute a script, it's an alien world:  <code>man</code> pages, terse and cryptic commands, unanticipated shortcuts and complications.  We will review many of the most common commands necessary to effectively use the command line for running code and managing data, as well as scripting and more advanced topics.</p>
 
@@ -67,17 +66,19 @@
 <a id="materials" class="anchor" href="#materials" aria-hidden="true"><span class="octicon octicon-link"></span></a>Materials</h4>
 
 <ul>
-<li><a href="https://github.com/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/bash-exercises.md">Exercises</a></li>
-<li><a href="https://github.com/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/bash.md">Notes</a></li>
-<li><a href="https://github.com/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/data.tar.gz?raw=true">Data</a></li>
+<li><a href="https://github.com/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/bash-exercises.md">Exercises</a></li>
+<li><a href="https://github.com/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/bash.md">Notes</a></li>
+<li><a href="https://github.com/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/data.tar.gz?raw=true">Data</a></li>
 </ul>
+
+<hr>
 
 <h1>
 <a id="introduction-to-scientific-computing-on-a-cluster" class="anchor" href="#introduction-to-scientific-computing-on-a-cluster" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#hpc">Introduction to Scientific Computing on a Cluster</a>
 </h1>
 
 <h3>
-<a id="feb-17-1000-amnoon--dcl-l440" class="anchor" href="#feb-17-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feb. 17, 10:00 am–noon • DCL L440</h3>
+<a id="oct-21-1000-am--noon--scl-0218" class="anchor" href="#oct-21-1000-am--noon--scl-0218" aria-hidden="true"><span class="octicon octicon-link"></span></a>Oct. 21, 10:00 am – noon • SCL 0218</h3>
 
 <blockquote>This workshop is designed to answer the question, "I've got a supercomputer account—now what?"</blockquote>
 
@@ -89,24 +90,26 @@
 <li>Running code (shells, job queues, scripts)</li>
 <li>Compiling code (makefiles, linking)</li>
 <li><p>Building and debugging scientific codes (numerical error, valgrind)</p></li>
-<li><p><a href="https://github.com/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/scicomp.md">Lesson notes</a></p></li>
+<li><p><a href="https://github.com/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/scicomp.md">Lesson notes</a></p></li>
 <li>
 <p>Numerical Error workbook</p>
 
 <ul>
-<li><a href="https://raw.githubusercontent.com/uiuc-cse/hpc-sp15/gh-pages/lessons/numerical-error-working.ipynb">Blank copy</a></li>
-<li><a href="https://raw.githubusercontent.com/uiuc-cse/hpc-sp15/gh-pages/lessons/numerical-error.ipynb">Full copy</a></li>
-<li><a href="http://nbviewer.ipython.org/github/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/numerical-error.ipynb">Static view</a></li>
+<li><a href="https://raw.githubusercontent.com/maxim-belkin/hpc-fa15/gh-pages/lessons/numerical-error-working.ipynb">Blank copy</a></li>
+<li><a href="https://raw.githubusercontent.com/maxim-belkin/hpc-fa15/gh-pages/lessons/numerical-error.ipynb">Full copy</a></li>
+<li><a href="http://nbviewer.ipython.org/github/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/numerical-error.ipynb">Static view</a></li>
 </ul>
 </li>
 </ul>
+
+<hr>
 
 <h1>
 <a id="introduction-to-illinois-campus-cluster" class="anchor" href="#introduction-to-illinois-campus-cluster" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#hpc">Introduction to Illinois Campus Cluster</a>
 </h1>
 
 <h3>
-<a id="feb-24-1000-amnoon--dcl-l440" class="anchor" href="#feb-24-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feb. 24, 10:00 am–noon • DCL L440</h3>
+<a id="oct-28-1000-am--noon--scl-0218" class="anchor" href="#oct-28-1000-am--noon--scl-0218" aria-hidden="true"><span class="octicon octicon-link"></span></a>Oct. 28, 10:00 am – noon • SCL 0218</h3>
 
 <p>While the prior workshop focuses on scientific cluster computing writ large, this workshop will focus more on the workflow, libraries, and environment of the <a href="http://campuscluster.illinois.edu/">Illinois Campus Cluster Program</a>.  Representatives of Campus Cluster will be present as well to answer user questions.</p>
 
@@ -123,52 +126,58 @@
 <p>Campus Cluster is now hosting walk-in help in 3101 NCSA, from 9 am to 5 pm, Mon through Fri.</p>
 
 <ul>
-<li><a href="https://github.com/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/iccp-intro.md">Lesson notes</a></li>
+<li><a href="https://github.com/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/iccp-intro.md">Lesson notes</a></li>
 </ul>
+
+<hr>
 
 <h1>
 <a id="threaded-parallel-programming-for-engineers-openmp" class="anchor" href="#threaded-parallel-programming-for-engineers-openmp" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#omp">Threaded Parallel Programming for Engineers (OpenMP)</a>
 </h1>
 
 <h3>
-<a id="mar-3-1000-amnoon--dcl-l440" class="anchor" href="#mar-3-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mar. 3, 10:00 am–noon • DCL L440</h3>
+<a id="nov-4-1000-am--noon--scl-0218" class="anchor" href="#nov-4-1000-am--noon--scl-0218" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nov. 4, 10:00 am – noon • SCL 0218</h3>
 
 <p><a href="http://openmp.org/wp/">OpenMP</a> is a set of extensions to the C, C++, and Fortran languages to allow the effective control of multiple cores on shared-memory machines, such as desktop computers or single nodes of supercomputers.  With a few well-placed annotations and some judicious restructuring of your current code, you can start seeing speedups from effectively using multiple processes immediately.  We will discuss the basics of OpenMP and examine some applications as well.  Programming experience with C or C++ is assumed.</p>
 
 <p>To use the interactive notebook, please open a terminal and execute the commands:</p>
 
-<pre><code>cd
-cd Desktop
-module load gcc canopy
-ipython notebook omp-c.ipynb
+<pre><code>    cd
+    cd Desktop
+    module load gcc canopy
+    ipython notebook omp-c.ipynb
 </code></pre>
 
 <ul>
-<li><a href="https://raw.githubusercontent.com/uiuc-cse/hpc-sp15/gh-pages/lessons/omp-c.ipynb">Interactive notes</a></li>
-<li><a href="http://nbviewer.ipython.org/github/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/omp-c.ipynb">Static view</a></li>
+<li><a href="https://raw.githubusercontent.com/maxim-belkin/hpc-fa15/gh-pages/lessons/omp-c.ipynb">Interactive notes</a></li>
+<li><a href="http://nbviewer.ipython.org/github/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/omp-c.ipynb">Static view</a></li>
 </ul>
+
+<hr>
 
 <h1>
 <a id="distributed-parallel-programming-for-engineers-mpi" class="anchor" href="#distributed-parallel-programming-for-engineers-mpi" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="#mpi">Distributed Parallel Programming for Engineers (MPI)</a>
 </h1>
 
 <h3>
-<a id="mar-10-1000-amnoon--dcl-l440" class="anchor" href="#mar-10-1000-amnoon--dcl-l440" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mar. 10, 10:00 am–noon • DCL L440</h3>
+<a id="nov-11-1000-am--noon--scl-0218" class="anchor" href="#nov-11-1000-am--noon--scl-0218" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nov. 11, 10:00 am – noon • SCL 0218</h3>
 
 <p>The <a href="http://www.mcs.anl.gov/research/projects/mpi/">Message-Passing Interface</a> is the <em>de facto</em> standard for all large-scale distributed-memory cluster computing.  We will examine the basics of this standard in C (and can touch on C++ and Fortran), as well as discuss some numerical coding applications and considerations.  Programming experience with C or C++ is assumed.</p>
 
 <p>To use the interactive notebook, please open a terminal and execute the commands:</p>
 
-<pre><code>cd
-cd Desktop
-module load gcc canopy
-ipython notebook mpi-c.ipynb
+<pre><code>    cd
+    cd Desktop
+    module load gcc canopy
+    ipython notebook mpi-c.ipynb
 </code></pre>
 
 <ul>
-<li><a href="https://raw.githubusercontent.com/uiuc-cse/hpc-sp15/gh-pages/lessons/mpi-c.ipynb">Interactive notes</a></li>
-<li><a href="http://nbviewer.ipython.org/github/uiuc-cse/hpc-sp15/blob/gh-pages/lessons/mpi-c.ipynb">Static view</a></li>
+<li><a href="https://raw.githubusercontent.com/maxim-belkin/hpc-fa15/gh-pages/lessons/mpi-c.ipynb">Interactive notes</a></li>
+<li><a href="http://nbviewer.ipython.org/github/maxim-belkin/hpc-fa15/blob/gh-pages/lessons/mpi-c.ipynb">Static view</a></li>
 </ul>
+
+<hr>
 
 <h1>
 <a id="about-these-workshops" class="anchor" href="#about-these-workshops" aria-hidden="true"><span class="octicon octicon-link"></span></a>About These Workshops</h1>
@@ -186,7 +195,7 @@ ipython notebook mpi-c.ipynb
 <p>If you have any questions about course availability, concepts, or content, please contact Neal Davis, Training Coördinator for Computational Science &amp; Engineering, at davis68 at illinois dot edu.</p>
       </section>
       <footer>
-        <p>Project maintained by <a href="https://github.com/uiuc-cse">uiuc-cse</a></p>
+        <p>Project maintained by <a href="https://github.com/maxim-belkin">maxim-belkin</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
